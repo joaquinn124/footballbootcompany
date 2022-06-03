@@ -1,0 +1,13 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bodyProp {
+    background-color: #37474F;
+    color: #18FFFF;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100vh;
+}
