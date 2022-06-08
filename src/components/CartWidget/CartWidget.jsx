@@ -1,4 +1,5 @@
-import cartLogo from '../Media/Cart_PngItem_7368442_first_color.png';
+import cartLogo from '../../Media/Cart_PngItem_7368442_first_color.png';
+
 import './CartWidget.css';
 
 export default function CartIcon () {

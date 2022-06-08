@@ -1,11 +1,12 @@
 import './ItemListContainer.css';
+import Titulos from "../Titulos/Titulos";
+import ProductCard from '../ItemCount/ItemCount';
 
 export default function ItemListContainter () {
     return (
         <div className='containterBody'>
-            <h2>Envasado y distribución de soda y agua mineral natural</h2>
-            <p className='subtitle'>¡NO DUDES EN HACER TU PEDIDO!</p>
-            <p className='subtitle2'>EMBALSE, ALMAFUERTE, RÍO TERCERO Y ZONA.</p>
+            <Titulos titulo={Titulos} />
+            <ProductCard />
         </div>
 
     )

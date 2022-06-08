@@ -1,5 +1,4 @@
-import logo from '../Media/93009659_143x143.jpg';
-
+import logo from '../../Media/93009659_143x143.jpg';
 
 export default function Body () {
     return (
