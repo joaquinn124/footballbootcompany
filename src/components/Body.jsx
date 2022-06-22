@@ -1,8 +1,8 @@
-import ItemListContainter from '../ItemListContainer/ItemListContainer';
-import './Body.css';
+import ItemListContainter from '../containers/ItemListContainer';
+import '../css/Body.css';
 
 
-export default function Body() {
+const Body = () => {
     return (
         <>
             <div className="bodyProp">
@@ -12,3 +12,5 @@ export default function Body() {
         </>
     )
 }
+
+export default Body;

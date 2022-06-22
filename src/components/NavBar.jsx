@@ -1,10 +1,10 @@
-import './NavBar.css';
+import '../css/NavBar.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Logo from '../Logo/Logo';
-import CartIcon from '../CartWidget/CartWidget';
+import Logo from '../components/Logo';
+import CartIcon from '../components/CartWidget';
 
 
 const NavBar = () => {

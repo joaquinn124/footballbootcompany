@@ -1,6 +1,6 @@
-import logo from '../../Media/93009659_143x143.jpg';
+import logo from '../media/your-logo-here-png-143x143.png';
 
-export default function Body () {
+const Body = () => {
     return (
         <>
             <div className="App">
@@ -11,3 +11,5 @@ export default function Body () {
         </>
     )
 }
+
+export default Body;
