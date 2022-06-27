@@ -1,0 +1,32 @@
+
+.itemDetailContainer {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.itemDetailTitle {
+    color: #363A16;
+    font-size: 35px;
+    padding-top: 9px;
+}
+
+.cardDescText {
+    font-size: 18px;
+    color: #363A16;
+}
+
+.cardPriceText {
+    font-size: 22px;
+    font-weight: 660;
+    color: #F5FFB1;
+    background-color: #363A16;
+    border-color: #363A16;
+}
+
+.cardPriceText:hover {
+    font-size: 22px;
+    background-color: #F5FFB1;
+    color: #363A16;
+    border-color: #363A16;
+}

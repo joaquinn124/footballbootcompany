@@ -9,23 +9,24 @@ import CartIcon from '../components/CartWidget';
 
 const NavBar = () => {
   return (
-    <Navbar className="bgColor" expand="lg">
-      <Container>
+    <Navbar className='bgColor' expand="lg">
+      <Container className='fontColor'>
         <Nav.Link href="#home">
             <Logo className="mr-2" />
         </Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Link 0</Nav.Link>
-            <Nav.Link href="#link">Link 1</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <Nav className='me-auto'>
+            <p className='buyBy'>BUY BY</p>
+            <a href="#home" className='fontColor'>Series</a>
+            <a href="#link" className='fontColor'>Ltd. Editions</a>
+            {/* <NavDropdown title="More options" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Option 1</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Option 2</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Another Option</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">External link</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
         <CartIcon />

@@ -6,7 +6,13 @@
 
 .buttonsStyles {
     font-size: 17px;
-    font-weight: bolder;
+    color: #F5FFB1;
+    background-color: #363A16;
+    border-color: #363A16;
+}
+
+.buttonsStyles:hover {
+    background-color: #F5FFB1;
     color: #363A16;
-    background-color: none;
+    border-color: #363A16;
 }

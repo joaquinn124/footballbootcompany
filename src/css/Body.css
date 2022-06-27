@@ -7,7 +7,19 @@
 .bodyProp {
     background-color: #363A16;
     color: #F5FFB1;
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 150vh;
+    padding: 25px 150px;
+    height: 225vh;
+    
+}
+
+@media (max-width: 415px) {
+
+    .bodyProp {
+        background-color: #363A16;
+        color: #F5FFB1;
+        padding: 3px 10px;
+        height: 325vh;
+        
+    }
+
 }

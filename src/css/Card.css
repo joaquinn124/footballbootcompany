@@ -6,3 +6,13 @@
 .altText {
     color: #F5FFB1;
 }
+
+a {
+    text-decoration: none;
+    color: #363A16;
+    font-size: larger;
+}
+
+a:hover {
+    color: #C62828;
+}

@@ -2,8 +2,30 @@
 
 .bgColor {
     background-color: #363A16;
+    /* position: fixed; */
 }
 
 .fontColor {
     color: #F5FFB1;
+    padding-top: 7px;
+    padding-right: 10px;
+}
+
+.fontColor:hover {
+    color: #C62828;
+}
+
+.buyBy {
+    color: #F5FFB1;
+    font-style: italic;
+    padding: 11px 20px 0px 25px;
+}
+
+@media (max-width: 415px) {
+
+    .buyBy {
+        color: #F5FFB1;
+        font-style: italic;
+        padding: 0px 0px;
+    }
 }

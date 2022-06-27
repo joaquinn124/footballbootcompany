@@ -1,3 +1,4 @@
+import ItemDetailList from '../containers/ItemDetailList';
 import ItemListContainter from '../containers/ItemListContainer';
 import '../css/Body.css';
 
@@ -7,6 +8,7 @@ const Body = () => {
         <>
             <div className="bodyProp">
                 <ItemListContainter />
+                <ItemDetailList />
             </div>
         
         </>

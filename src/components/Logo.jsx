@@ -1,6 +1,8 @@
-import logo from '../media/your-logo-here-png-143x143.png';
 
 const Body = () => {
+    
+    const logo = '/media/your-logo-here-png-143x143.png';
+    
     return (
         <>
             <div className="App">
