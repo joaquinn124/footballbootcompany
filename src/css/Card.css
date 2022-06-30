@@ -16,3 +16,18 @@ a {
 a:hover {
     color: #C62828;
 }
+
+.cardPriceText {
+    font-size: 22px;
+    font-weight: 470;
+    color: #F5FFB1;
+    background-color: #363A16;
+    border-color: #363A16;
+}
+
+.cardPriceText:hover {
+    font-size: 22px;
+    background-color: #F5FFB1;
+    color: #363A16;
+    border-color: #363A16;
+}

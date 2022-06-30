@@ -4,6 +4,7 @@ import Titles from "../components/Titles";
 import ItemList from './ItemList';
 import ProductsList from '../helpers/productsList';
 import ItemDetailList from './ItemDetailList';
+import { useParams } from 'react-router-dom';
 
 const ItemListContainter = () => {
 
@@ -15,12 +16,23 @@ const ItemListContainter = () => {
 
     const [products, setProducts] = useState([]);
 
+    const { collectionClass } = useParams ();
+    console.log(collectionClass);
+
     useEffect(() => {
-        promise.then((products) => {
-            setProducts(products)
-        }).catch(() => {
-            console.log("Something went wrong!");
-        })
+        if (collectionClass) {
+            promise.then((products) => {
+                setProducts(products.filter(product => product.collection === collectionClass))
+            }).catch(() => {
+                console.log("Something went wrong!");
+            })
+        } else {
+            promise.then((products) => {
+                setProducts(products)
+            }).catch(() => {
+                console.log("Something went wrong!");
+            })
+        }
     }, [])
 
     

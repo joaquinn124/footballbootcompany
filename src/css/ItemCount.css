@@ -4,6 +4,11 @@
     text-align: center;
 }
 
+.placeholder {
+    background-color: none;
+    color: #363A16;
+}
+
 .buttonsStyles {
     font-size: 17px;
     color: #F5FFB1;
@@ -15,4 +20,19 @@
     background-color: #F5FFB1;
     color: #363A16;
     border-color: #363A16;
+}
+
+li {
+    list-style-type: none;
+    color: #363A16;
+    font-weight: 470;
+    padding-left: 3px;
+}
+
+i {
+    color: #363A16;
+    width: 35px;
+    font-size: 20px;
+    font-style: normal;
+    padding-top: 2px;
 }

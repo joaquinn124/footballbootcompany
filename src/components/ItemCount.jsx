@@ -1,6 +1,7 @@
 import '../css/ItemCount.css';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
+import Loader from './Loader';
 
 const ItemCount = ({stock, price, onAdd}) => {
     
@@ -51,14 +52,14 @@ const ItemCount = ({stock, price, onAdd}) => {
                 <>
                     <div className='d-flex justify-content-evenly'>
                         <Button variant='light' className='buttonsStyles' onClick={removeItems}> - </Button>
-                        {counter}
+                        <i>{counter}</i>
                         <Button variant='light' className='buttonsStyles' onClick={addItems}> + </Button>
                     </div>
                     <div className='d-flex justify-content-center pt-1'>
                         <Button variant='light' className='buttonsStyles' style={{ width: '65%' }} onClick={onAddCart}>Add to cart</Button>
                     </div>
                     <div className='d-flex justify-content-center pt-1'>
-                        <Button variant='light' className='buttonsStyles' style={{ width: '65%' }} onClick={Reset}>Reset</Button>
+                        <Button variant='light' className='buttonsStyles mb-1' style={{ width: '65%' }} onClick={Reset}>Reset</Button>
                     </div>
                     
                     {/* <div className='card-detail-button'>
@@ -69,12 +70,10 @@ const ItemCount = ({stock, price, onAdd}) => {
                     <a onClick={addItems}>+</a>
                     </div> */}
 
-
-
                  </>
                  :
                  <div>
-                    <span>No stock</span>
+                    <Loader />
                  </div>   
             }        
         </>

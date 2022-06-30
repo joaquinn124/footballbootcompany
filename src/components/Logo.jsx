@@ -1,5 +1,5 @@
 
-const Body = () => {
+const Logo = () => {
     
     const logo = '/media/your-logo-here-png-143x143.png';
     
@@ -14,4 +14,4 @@ const Body = () => {
     )
 }
 
-export default Body;
+export default Logo;
