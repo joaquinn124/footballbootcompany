@@ -5,25 +5,26 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../components/Logo';
 import CartIcon from '../components/CartWidget';
-import { Link, NavLink } from 'react-router-dom';
+import { BrowserRouter, Link, NavLink, Router } from 'react-router-dom';
 
 
 const NavBar = () => {
   return (
     <Navbar className='bgColor' expand="lg">
       <Container className='fontColor'>
+      <BrowserRouter>
         <Nav.Link href="#home">
+        <Link to="/">
           <Logo className="mr-2" />
+        </Link>          
         </Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className='me-auto'>
             <p className='buyBy'>BUY BY</p>
-            {/* <a href="#link" className='fontColor'>Regular</a>
-            <a href="#link" className='fontColor'>Ltd. Editions</a> */}
-
-            <Link to="/collection/regular">Regular</Link>
-            <Link to="/collection/limited">Ltd. Editions</Link>
+            
+              <Link to="/collection/regular" className='fontColor'>Regular</Link>
+              <Link to="/collection/limited" className='fontColor'>Ltd. Editions</Link>         
             
             {/* <NavDropdown title="More options" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Option 1</NavDropdown.Item>
@@ -36,6 +37,7 @@ const NavBar = () => {
           </Nav>
         </Navbar.Collapse>
         <CartIcon />
+        </BrowserRouter> 
       </Container>
     </Navbar>
   )

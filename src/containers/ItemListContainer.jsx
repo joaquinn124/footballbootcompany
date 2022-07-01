@@ -33,7 +33,7 @@ const ItemListContainter = () => {
                 console.log("Something went wrong!");
             })
         }
-    }, [])
+    }, [collectionClass])
 
     
     return (

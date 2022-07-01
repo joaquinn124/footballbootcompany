@@ -1,5 +1,5 @@
 import '../css/Body.css';
-import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 
 import ItemDetailList from '../containers/ItemDetailList';
 import ItemListContainter from '../containers/ItemListContainer';
