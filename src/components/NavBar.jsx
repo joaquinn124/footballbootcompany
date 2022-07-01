@@ -19,11 +19,11 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className='me-auto'>
             <p className='buyBy'>BUY BY</p>
-            <a href="#link" className='fontColor'>Regular</a>
-            <a href="#link" className='fontColor'>Ltd. Editions</a>
+            {/* <a href="#link" className='fontColor'>Regular</a>
+            <a href="#link" className='fontColor'>Ltd. Editions</a> */}
 
-            {/* <Link to="/collection/regular">Regular</Link>
-            <Link to="/collection/limited">Ltd. Editions</Link> */}
+            <Link to="/collection/regular">Regular</Link>
+            <Link to="/collection/limited">Ltd. Editions</Link>
             
             {/* <NavDropdown title="More options" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Option 1</NavDropdown.Item>
