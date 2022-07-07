@@ -1,0 +1,56 @@
+
+
+.cartContent {
+    padding-top: 70px;
+}
+
+ul li {
+    list-style-type: none;
+    color: #F5FFB1;
+    font-family: body;
+    font-size: 25px;
+    font-weight: 470;
+    padding-left: 3px;
+    padding-top: 5px;
+}
+
+.cartContainer {
+    padding-top: 75px;
+}
+
+.cardCart {
+    color: #F5FFB1;
+    font-family: body;
+    font-size: 18px;
+    font-weight: 470;
+    padding-left: 35px;
+    margin-top: 3px;
+}
+
+.cartButtonsStyle {
+    font-size: 18px;
+    font-family: app;
+    font-weight: 270;
+    text-transform: uppercase;
+    color: #F5FFB1;
+    background-color: #363A16;
+    border-color: #363A16;
+}
+
+.cartButtonsStyle:hover {
+    color: #C62828;
+    background-color: #363A16;
+    border-color: #363A16;
+}
+
+@media (max-width: 415px) {
+
+    .cartCard {
+        color: #F5FFB1;
+        font-family: body;
+        font-size: 15px;
+        font-weight: 470;
+        padding-top: 75px;
+    }
+  
+  }

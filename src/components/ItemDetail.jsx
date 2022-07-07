@@ -1,14 +1,20 @@
 import "../css/ItemDetail.css";
+
 import ItemCount from './ItemCount';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import { useCartContext } from "../contexts/CartContext";
 
 const ItemDetail = ({product}) => {
+    
+    const {cart, addToCart} = useCartContext();
 
     const onAdd = (counter) => {
         alert ("Added to cart!");
         console.log(`${counter} items added`);
+        addToCart ({...product, quantity: counter})
     }
+
+    console.log(cart);
 
     return (
         <div className='itemDetailContainer'>
@@ -17,9 +23,6 @@ const ItemDetail = ({product}) => {
                     <Card.Title className='itemDetailTitle'>{product.model} ${product.price}</Card.Title>
                     <Card.Text className='card-detail-button cardDescText ps-1 pe-1'>
                     {product.description}</Card.Text>
-                    {/* <Button variant='light' className='cardPriceText ms-2 me-2 mb-1'>
-                    Price ${product.price}
-                    </Button> */}
                     <div className='flex-column justify-content-center'>
                         <ItemCount stock={product.stock} onAdd={onAdd}/>
                     </div>

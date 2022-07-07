@@ -1,6 +1,7 @@
 
 .cardBsStyle {
     color: #363A16;
+    font-family: body;
 }
 
 .altText {
@@ -18,15 +19,17 @@ a:hover {
 }
 
 .cardPriceText {
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 470;
+    font-family: app;
+    text-transform: uppercase;
     color: #F5FFB1;
     background-color: #363A16;
     border-color: #363A16;
 }
 
 .cardPriceText:hover {
-    font-size: 22px;
+    font-size: 17px;
     background-color: #F5FFB1;
     color: #363A16;
     border-color: #363A16;

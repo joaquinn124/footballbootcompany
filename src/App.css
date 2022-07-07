@@ -1,38 +1,46 @@
-/* .App {
-  text-align: center;
+@font-face {
+  font-family: app;
+  src: url('../src/font/BlackOpsOne-Regular.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: body;
+  src: url('../src/font/SecularOne-Regular.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bodyProp {
+  background-color: #363A16;
+  color: #F5FFB1;
+  padding: 25px 150px;
+  height: 225vh;
+  
+}
+
+@media (min-width: 416px) and (max-width: 1530px) {
+
+  .bodyProp {
+      background-color: #363A16;
+      color: #F5FFB1;
+      padding: 3px 10px;
+      height: 275vh;
+      
   }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media (max-width: 415px) {
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .bodyProp {
+      background-color: #363A16;
+      color: #F5FFB1;
+      padding: 3px 10px;
+      height: 655vh;
+      
   }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
+}

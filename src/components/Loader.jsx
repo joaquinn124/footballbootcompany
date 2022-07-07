@@ -1,12 +1,21 @@
-import React from "react"
-import Spinner from 'react-bootstrap/Spinner'
+import React from "react";
+import Button from 'react-bootstrap/Button';
+import Spinner from 'react-bootstrap/Spinner';
 
 const Loader = () => {
 
     return (
         <>
-        <Spinner animation="border" variant="info" className="mt-2" />
-        <p className="altText">Loading...</p>
+            <Button variant="light" disabled>
+            <Spinner 
+            as="span"
+            animation="border"
+            size="sm"
+            role="status"
+            aria-hidden="true"
+            />
+            Loading...
+            </Button>
         </>
     )
 }

@@ -2,13 +2,13 @@
 let productsList = [
     {
         id: '1',
-        model: 'Nike Tiempo Legend 9 Elite',
-        series: 'Tiempo',
-        collection: 'regular',
-        price: 231,
+        model: 'Adidas Predator Edge Crystal FG',
+        series: 'Predator',
+        collection: 'limited',
+        price: 349,
         stock: 5,
-        imageUrl: '/media/products/Nike_Tiempo_Legend_9 Elite.jpg',
-        description: 'One of our lightest Tiempos yet, the Nike Tiempo Legend 9 Elite FG lets you go forward in a low-top design that`s reimagined for attack.'
+        imageUrl: '/media/products/Adidas_Predator_Edge_Crystal FG.jpg',
+        description: 'Design decorated with Swarovski crystal details, which creates an eye-catching and icy look on the court. Primeknit upper with innovative and revolutionary Zone Skin, which provides ultimate control and improved grip Forefoot with Powerfacet technology incorporated.'
     },
     {
         id: '2',
@@ -22,13 +22,13 @@ let productsList = [
     },
     {
         id: '3',
-        model: 'Puma Ultra 1.3 MXSG Pro FG',
-        series: 'Ultra',
+        model: 'Puma Future Z 1.2 MXSG Pro',
+        series: 'Future',
         collection: 'regular',
-        price: 160,
+        price: 138,
         stock: 5,
-        imageUrl: '/media/products/Puma_Ultra_1.3 MxSG.jpg',
-        description: 'Take your game to the next level in the lightest boots on the market, formidable ULTRA 1.4. Built specifically for unbeatable speed and control, the updated ULTRACUT upper provides multi-layered support.'
+        imageUrl: '/media/products/Puma_Future_1.2 MXSG.jpg',
+        description: 'The Future 1.2 was designed without compromise so you can take on every challenge on the pitch. It has an adaptive design and the textured upper part is divided into zones to improve ball grip and hitting power.'
     },
     {
         id: '4',
@@ -45,19 +45,19 @@ let productsList = [
         model: 'Adidas X Speedflow.1 FG AG',
         series: 'Speedflow',
         collection: 'regular',
-        price: 130,
+        price: 199,
         stock: 10,
         imageUrl: '/media/products/Adidas_X_Speedflow.1 FG.jpg',
         description: 'Speedflow with laceless closure system, which provides a fine touch surface and a clean hit on the ball. Lightweight construction with Carbitex carbon fibers in the forefoot, which creates an efficient power discharge at high speed.'
     },
     {
         id: '6',
-        model: 'Puma Future 1.2 FG Magenta',
-        series: 'Future',
+        model: 'Puma Ultra 1.4 MXSG Instinct',
+        series: 'Ultra',
         collection: 'regular',
         price: 160,
         stock: 20,
-        imageUrl: '/media/products/Puma_Future_1.2 FGAG Magenta.jpg',
+        imageUrl: '/media/products/Puma_Ultra_1.4 MXSG Pro.jpg',
         description: 'Unbeatable features, including PUMA FUZIONFIT compression band, ultra-lightweight materials, a textured upper for ball grip and the Dynamic Motion System outsole combine to keep your game as dynamic as can be.'
     },
     {
@@ -72,14 +72,15 @@ let productsList = [
     },
     {
         id: '8',
-        model: 'Adidas Predator Edge Crystal FG',
-        series: 'Predator',
-        collection: 'limited',
-        price: 349,
+        model: 'New Balance Furon V6+ Pro Jamaica',
+        series: 'Furon',
+        collection: 'regular',
+        price: 231,
         stock: 5,
-        imageUrl: '/media/products/Adidas_Predator_Edge_Crystal FG.jpg',
-        description: 'Design decorated with Swarovski crystal details, which creates an eye-catching and icy look on the court. Primeknit upper with innovative and revolutionary Zone Skin, which provides ultimate control and improved grip Forefoot with Powerfacet technology incorporated.'
-    },
+        imageUrl: '/media/products/New Balance_Furon_V6+ Pro Jamaica.jpg',
+        description: 'Lightweight synthetic construction with synthetic suede lining for increased comfort and moisture management. With Fit Weave for deliver durability and stretch exactly where you need it!.'
+    }
+    ,
     {
         id: '9',
         model: 'Adidas Predator Edge Geometric FG',
@@ -93,7 +94,7 @@ let productsList = [
     {
         id: '10',
         model: 'Lotto Solista 100 IV Gravity',
-        series: 'Future',
+        series: 'Solista',
         collection: 'limited',
         price: 160,
         stock: 20,

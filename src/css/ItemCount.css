@@ -11,6 +11,9 @@
 
 .buttonsStyles {
     font-size: 17px;
+    font-family: app;
+    font-weight: 270;
+    text-transform: uppercase;
     color: #F5FFB1;
     background-color: #363A16;
     border-color: #363A16;

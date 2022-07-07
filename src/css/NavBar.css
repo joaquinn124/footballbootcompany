@@ -6,9 +6,11 @@
 }
 
 .fontColor {
+    font-family: app;
+    text-transform: uppercase;
     color: #F5FFB1;
     padding-top: 7px;
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 .fontColor:hover {
@@ -17,6 +19,7 @@
 
 .buyBy {
     color: #F5FFB1;
+    font-family: app;
     font-style: italic;
     padding: 11px 20px 0px 25px;
 }
@@ -25,6 +28,7 @@
 
     .buyBy {
         color: #F5FFB1;
+        font-family: app;
         font-style: italic;
         padding: 0px 0px;
     }

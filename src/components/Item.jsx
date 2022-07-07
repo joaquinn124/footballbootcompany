@@ -5,12 +5,7 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
 const Item = ({item}) => {
-    
-    /* const onAdd = (counter) => {
-        alert ("Added to cart!");
-        console.log(`${counter} items added`);
-    } */
-       
+           
     return (
         <>
             <Card className='d-flex justify-content-center pb-2 mb-2' style={{ width: '18rem' }} key={item.id}>

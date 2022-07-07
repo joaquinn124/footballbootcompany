@@ -6,6 +6,8 @@
 
 .subtitle {
     font-size: 18px;
+    padding-left: 2px;
+    font-family: app;
 }
 
 .subtitle2 {
@@ -15,4 +17,8 @@
 .cardStyle {
     margin-top: 20px;
     /* border: solid 0.5px #F5FFB1; */
+}
+
+h2 {
+    font-family: app;
 }
