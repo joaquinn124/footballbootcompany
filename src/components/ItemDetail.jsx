@@ -6,15 +6,14 @@ import { useCartContext } from "../contexts/CartContext";
 
 const ItemDetail = ({product}) => {
     
-    const {cart, addToCart} = useCartContext();
-
+    const {cart, addToCart, AddToCart} = useCartContext();
+    
     const onAdd = (counter) => {
-        alert ("Added to cart!");
+        //alert ("Added to cart!");
         console.log(`${counter} items added`);
-        addToCart ({...product, quantity: counter})
+        /* addToCart ({...product, quantity: counter}) */
+        AddToCart({...product, quantity: counter})
     }
-
-    console.log(cart);
 
     return (
         <div className='itemDetailContainer'>
