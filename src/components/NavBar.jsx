@@ -2,16 +2,15 @@ import '../css/NavBar.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../components/Logo';
 import CartIcon from '../components/CartWidget';
-import { BrowserRouter, Link, NavLink, Router } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 const NavBar = () => {
   return (
     <Navbar className='bgColor' expand="lg">
-      <Container className='fontColor'>
+      <Container className='fontColor containerMobile'>
         <Nav.Link href="#home">
         <Link to="/">
           <Logo className="mr-2" />

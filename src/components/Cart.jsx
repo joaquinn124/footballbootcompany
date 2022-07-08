@@ -9,27 +9,31 @@ const Cart = () => {
     const {cart, emptyCart, totalPrice} = useCartContext();
 
     return (
-        <>
-            <div className="cartContainer">
-                {
-                    
-                    cart.map(i =>
-                    
-                    <ListGroup variant="flush" style={{width: '22rem'}} key={i.item.id} className="cardCart">
-                            <ListGroup.Item>{i.item.model}</ListGroup.Item>
-                            <ListGroup.Item>Unit. Price: {i.item.price}</ListGroup.Item>
-                            <ListGroup.Item>Quantity: {i.item.quantity}</ListGroup.Item>
-                    </ListGroup>
-                    )
-                }
-            </div>
-            <div>
-                <Button variant='light' className='cartButtonsStyle ms-4'>Total: {totalPrice()}</Button>
-            </div>
-            <div>
-                <Button variant='light' className='cartButtonsStyle ms-4' onClick={emptyCart}>Empty Cart</Button>
-            </div>
-        </>
+        cart.length === 0
+        ?
+            <Button variant='light' className='cartButtonsStyle ms-4'>Oops the cart it's empty</Button>
+        :
+            <>
+                <div className="cartContainer">
+                    {
+                        
+                        cart.map(item =>
+                        
+                        <ListGroup variant="flush" style={{width: '22rem'}} key={item.id} className="cardCart">
+                                <ListGroup.Item>{item.model}</ListGroup.Item>
+                                <ListGroup.Item>Unit. Price: {item.price}</ListGroup.Item>
+                                <ListGroup.Item>Quantity: {item.quantity}</ListGroup.Item>
+                        </ListGroup>
+                        )
+                    }
+                </div>
+                <div>
+                    <Button variant='light' className='cartButtonsStyle ms-4'>Total: {totalPrice()}</Button>
+                </div>
+                <div>
+                    <Button variant='light' className='cartButtonsStyle ms-4' onClick={emptyCart}>Empty Cart</Button>
+                </div>
+            </>
     )
 }
 

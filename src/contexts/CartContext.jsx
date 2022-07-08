@@ -9,41 +9,40 @@ export const CartContextProvider = ({children}) => {
     
     //Functions and states, now it'll be listed here instead on each component
     const [cart, setCart] = useState ([]);
-    
-    const addToCart = (item) => {
-        setCart([
-            //"..." it's a split template that copy cart content + ítem on a new array
-            ...cart,
-            item
-        ]);
-    }
 
-    //
-    const AddToCart = (item, quantity) => {
-        if (IsInCart(item.id)){
-            alert('The product already exist in Cart')
+    const addToCart = (objProd) => {
+        
+        let previousCart=[...cart];
+
+        //Statements to check items in Cart, if already existis, it add more qty
+        if (previousCart.some((item) => item.id === objProd.id)) {
+            previousCart.find((item) => item.id === objProd.id).quantity += objProd.quantity;
+            setCart(previousCart);
         } else {
-            //"..." it's a split template that copy cart content + ítem on a new array
-            setCart ([...cart, {item, quantity}])
-            alert('Added to cart!')
+            setCart([...cart, objProd])
         }
     }
 
-    const IsInCart = (id) => {
-        return cart&&cart.some((i) => i.item.id === id)
-    }
-
-    const emptyCart = () => {
-        setCart([]);
-    }
+    const emptyCart = () => setCart([]);
 
     const totalPrice = () => {
-        return cart.reduce( (acum, i) => acum + i.item.quantity * i.item.price, 0)
+
+        let total = 0;
+
+        cart.forEach((newProduct) => {
+            total +=
+                parseInt(newProduct.price) * parseInt(newProduct.quantity);
+            })
+        return parseInt(total);
     }
 
-    /* const iconCart = () => {
-        return cart.reduce( (acum, i) => acum+ i.item.quantity, 0)
-    } */
+    const removeProduct = (id) => {
+        setCart(cart.filter((newProduct) => newProduct.product.id !== id));
+    }
+
+    const iconCart = () => {
+        return cart.reduce( (acum, value) => acum+ value.quantity, 0)
+    }
 
     return (
         //Provider node that recibe childrens as prop and includes it on the context provider
@@ -52,8 +51,9 @@ export const CartContextProvider = ({children}) => {
                     cart,
                     addToCart,
                     emptyCart,
-                    AddToCart,
-                    totalPrice
+                    totalPrice,
+                    removeProduct,
+                    iconCart
                 }}
             >
                 {children}

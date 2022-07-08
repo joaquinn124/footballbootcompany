@@ -1,18 +1,28 @@
 import '../css/CartWidget.css';
 
 import { Link } from 'react-router-dom';
+import { useCartContext } from "../contexts/CartContext";
+import { Badge, Button } from 'react-bootstrap';
 
 const CartIcon = () => {
-
-    const cartLogo = '/media/Cart_PngItem_7368442_first_color.png';
     
+    const {cart, iconCart} = useCartContext();
+
     return (
-        
+        <>
             <Link to="/cart">
-                <div className='cartIconProp'>
-                    <img href="#" src={cartLogo}/>
-                </div>                
+                <Button variant='light' className='buttonsStyles cartMobile'>
+                    money expender 
+                    {<Badge bg='danger' className='ms-1 cartCounter'>
+                        {cart.length === 0
+                        ?
+                        0
+                        : iconCart()
+                        }
+                    </Badge>}
+                </Button>
             </Link>
+        </>
     )
 }
 
