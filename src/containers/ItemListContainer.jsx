@@ -5,6 +5,7 @@ import ItemList from './ItemList';
 import ProductsList from '../helpers/productsList';
 import ItemDetailList from './ItemDetailList';
 import { useParams } from 'react-router-dom';
+import {collection, getDocs, getFirestore, query, where} from 'firebase/firestore';
 
 const ItemListContainter = () => {
 
@@ -13,14 +14,33 @@ const ItemListContainter = () => {
             res(ProductsList);
         }, 2000);
     })
-
+    
     const [products, setProducts] = useState([]);
-
+    
     const { collectionClass } = useParams ();
-    console.log(collectionClass);
+
+    ///
+    const {categoriaId} = useParams ();
+    const [loading, setLoading] = useState(true);
+    const queryCollectionFilter = query(queryCollection, where('collection', '==', categoriaId))
 
     useEffect(() => {
-        if (collectionClass) {
+
+        ///
+        const db = getFirestore()
+        const queryCollection = collection(db, 'products')
+
+        const queryCollectionFilter = categoriaId ? query(queryCollection, where('collection', '==', categoriaId)) : queryCollection
+
+        getDocs(queryCollectionFilter)
+        .then(data => setProducts(data.docs.map(item => ({id: item.id, ...item.data() }))))
+        .catch(error => console.log(error))
+        .finally(() => setLoading(false))
+
+    }, [categoriaId])
+
+
+        /* if (collectionClass) {
             promise.then((products) => {
                 setProducts(products.filter(product => product.collection === collectionClass))
             }).catch(() => {
@@ -33,7 +53,7 @@ const ItemListContainter = () => {
                 console.log("Something went wrong!");
             })
         }
-    }, [collectionClass])
+    }, [collectionClass]) */
 
     
     return (

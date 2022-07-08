@@ -3,6 +3,7 @@ import "../css/Cart.css";
 import React from "react";
 import { Button, ListGroup } from 'react-bootstrap';
 import { useCartContext } from "../contexts/CartContext";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
 
@@ -11,7 +12,7 @@ const Cart = () => {
     return (
         cart.length === 0
         ?
-            <Button variant='light' className='cartButtonsStyle ms-4'>Oops the cart it's empty</Button>
+            <Link to="/" className='cartButtonsStyle ms-4'>Oops the cart it's empty</Link>
         :
             <>
                 <div className="cartContainer">
