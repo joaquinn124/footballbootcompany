@@ -16,7 +16,7 @@ const CartIcon = () => {
                     {<Badge bg='danger' className='ms-1 cartCounter'>
                         {cart.length === 0
                         ?
-                        0
+                        ''
                         : iconCart()
                         }
                     </Badge>}
